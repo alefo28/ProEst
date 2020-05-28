@@ -92,7 +92,7 @@ int main(int argc, char *argv[]) {
 	pf = fopen(imprimir,"w+");
 	fprintf(pf,"\"students\": \[\n");
 	for(i=0;i<10;i++){	
-		fprintf(pf,"\{ \"ID\": %d  \"Nombre\": %s  \"apellido paterno\": %s  \"Apellido Materno\": %s  \"Cumpleaños\": %s  \"Escuela\": %s  \"Grado\": %d  \"Carrera\": %s \"Genero\": %s \}",alum[i].ID,alum[i].nom,alum[i].app,alum[i].apm,alum[i].cumple,alum[i].escuela,alum[i].grado,alum[i].carrera,alum[i].gene);
+		fprintf(pf,"\{ \"ID\": %d  \"Nombre\": %s  \"apellido paterno\": %s  \"Apellido Materno\": %s  \"Cumpleaños\": %s  \"Escuela\": %s  \"Grado\": %d  \"Carrera\": %s \"Genero\": %s \} \n",alum[i].ID,alum[i].nom,alum[i].app,alum[i].apm,alum[i].cumple,alum[i].escuela,alum[i].grado,alum[i].carrera,alum[i].gene);
 	}
 	fprintf(pf,"\]");
 		
